@@ -1,0 +1,9 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gloo = "0.11.0"
+winit = "0.30.0"
+wasm-bindgen-futures = "0.4.42"
