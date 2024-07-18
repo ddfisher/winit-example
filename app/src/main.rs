@@ -55,7 +55,7 @@ fn add_prevent_default_listeners(canvas: HtmlCanvasElement) {
             event_type,
             prevent_default_listener.as_ref().unchecked_ref(),
         );
-        prevent_default_listener.into_js_value();
+        prevent_default_listener.forget();
     }
 
     for event_type in pointer_events_to_focus_and_prevent_default.into_iter() {
